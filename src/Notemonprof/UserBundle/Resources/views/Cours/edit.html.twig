@@ -1,0 +1,29 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>Cours creation</h1>
+    {{ form_start(edit_form) }}
+    {{ form_row(edit_form.abrv) }}
+    {{ form_row(edit_form.intitule) }}
+    <div>
+        <label for="edit_form_user">Professeur</label>
+        {{ form_errors(edit_form.user) }}
+        {{ form_widget(edit_form.user) }}
+    </div>
+    <br>
+
+        <ul class="record_actions">
+            <br>
+    <li>
+        <a href="{{ path('cours') }}">
+            Back to the list
+        </a>
+    </li>
+            <br>
+            {{ form_row(edit_form.submit) }}
+            {{ form_end(edit_form) }}
+            <br><br>{{ form(delete_form) }}
+            <br>
+
+</ul>
+{% endblock %}

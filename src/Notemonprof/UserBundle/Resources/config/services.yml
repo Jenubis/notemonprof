@@ -1,0 +1,7 @@
+parameters:
+#    notemonprof_user.example.class: Notemonprof\UserBundle\Example
+
+services:
+#    notemonprof_user.example:
+#        class: %notemonprof_user.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

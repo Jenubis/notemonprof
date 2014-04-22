@@ -1,0 +1,8 @@
+{% extends "::base.html.twig" %}
+
+{%  block content %}
+    {% if is_granted('ROLE_ADMIN') %}
+        {% block body %}{% endblock %}
+    {%else  %}Vous n'avez pas l'autorisation de voir cette page
+    {% endif %}
+{% endblock %}

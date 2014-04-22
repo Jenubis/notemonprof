@@ -1,0 +1,30 @@
+note:
+    pattern:  /
+    defaults: { _controller: "NotemonprofUserBundle:Note:index" }
+
+note_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "NotemonprofUserBundle:Note:show" }
+
+note_new:
+    pattern:  /{id_cours}/new
+    defaults: { _controller: "NotemonprofUserBundle:Note:new" }
+
+note_create:
+    pattern:  /create/{id_cours}
+    defaults: { _controller: "NotemonprofUserBundle:Note:create" }
+    requirements: { _method: post }
+
+note_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "NotemonprofUserBundle:Note:edit" }
+
+note_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "NotemonprofUserBundle:Note:update" }
+    requirements: { _method: post|put }
+
+note_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "NotemonprofUserBundle:Note:delete" }
+    requirements: { _method: post|delete }

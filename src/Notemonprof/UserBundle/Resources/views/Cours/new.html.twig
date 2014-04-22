@@ -1,0 +1,26 @@
+{% extends '@NotemonprofUser/admin.html.twig' %}
+
+{% block body -%}
+    <h1>Cours creation</h1>
+    {{ form_start(form) }}
+    {{ form_row(form.abrv) }}
+    {{ form_row(form.intitule) }}
+    {{ form_row(form.date) }}
+    {{ form_row(form.duree) }}
+    <div>
+        <label for="form_user">Professeur</label>
+        {{ form_errors(form.user) }}
+        {{ form_widget(form.user) }}
+    </div>
+    <br>
+    {{ form_row(form.submit) }}
+    {{ form_end(form) }}
+        <ul class="record_actions">
+           <br>
+    <li>
+        <a href="{{ path('cours') }}">
+            Back to the list
+        </a>
+    </li>
+</ul>
+{% endblock %}

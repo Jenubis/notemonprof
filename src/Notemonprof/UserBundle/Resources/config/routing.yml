@@ -1,0 +1,30 @@
+notemonprof_user_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: NotemonprofUserBundle:Default:index }
+
+NotemonprofUserBundle_cours:
+        resource: "@NotemonprofUserBundle/Resources/config/routing/cours.yml"
+        prefix:   /cours
+
+NotemonprofUserBundle_classe:
+        resource: "@NotemonprofUserBundle/Resources/config/routing/classe.yml"
+        prefix:   /classe
+
+NotemonprofUserBundle_note:
+        resource: "@NotemonprofUserBundle/Resources/config/routing/note.yml"
+        prefix:   /note
+
+
+NotemonprofUserBundle_user:
+        resource: "@NotemonprofUserBundle/Resources/config/routing/user.yml"
+        prefix:   /user
+
+
+NotemonprofUserBundle_prof:
+        resource: "@NotemonprofUserBundle/Resources/config/routing/prof.yml"
+        prefix:   /prof
+
+
+NotemonprofUserBundle_eleve:
+        resource: "@NotemonprofUserBundle/Resources/config/routing/eleve.yml"
+        prefix:   /eleve
